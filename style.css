@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+section, div {
+     width: 100vw;
+    
+ }
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+div, header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-blue {
+    height: 5vh;
+    background-color: #5894da;
+}
+header {
+    height: 40vh;
+    background-color: #b2d5ff;
+}
+.feature_signUp {
+   
+    flex-grow: 1;
+    height: 50vh; 
+}
+.feature_3 {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+}
+.signUp {
+    float: left;
+    width: 100vw;
+    height: 20vh;
+    background-color: #d6e8fe;
+
+    order:1;
+}
+.feature-yellow {
+    float: left;
+    width: 33.33vw;
+    height: 50vh;
+    background-color: #f4ce8d;
+}
+.feature-purple {
+    float: left;
+    width: 33.33vw;
+    height: 50vh;
+    background-color: #c8c5fa;
+    
+}
+.feature-red {
+    float: right;
+    width: 33.33vw;
+    height: 50vh;
+    background-color: #ef999c;
+}
+
+.features_3 {
+    flex-wrap: wrap;
+}
+.content {
+    height: 40vh;
+    background-color: silver;
+}
+
+
+/*-------- Version Tablette --------*/
+@media screen and (max-width:768px) {
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    header {
+        height: 30vh;
+        background-color: #b2d5ff;
+    }
+    .signUp {
+        float: left;
+        width: 50vw;
+        height: 30vh;
+        order:-1; 
+    }
+    .feature-yellow {
+        float: left;
+        width: 50vw;
+        height: 30vh;
+3    background-color: #f4ce8d;
+    }
+    .feature-purple {
+        float: left;
+        width: 50vw;
+        height: 30vh;
+        background-color: #c8c5fa;
+        order:1; 
+        
+    }
+    .feature-red {
+        float: right;
+        width: 50vw;
+        height: 30vh;
+        background-color: #ef999c;
+        
+    }
+    .features_3 {
+        flex-wrap: wrap;
+    }
+    .content {
+        height: 60vh;
+        background-color: silver;
+    }
+}
+
+/*-------- Version Mobile --------*/
+@media screen and (max-width:470px) {
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    header {
+        height: 30vh;
+        background-color: #b2d5ff;
+    }
+    .signUp {
+        float: none;
+        width: 100vw;
+        height: 25vh;
+        order:-1; 
+    }
+    .feature-yellow {
+        float: none;
+        width: 100vw;
+        height: 25vh;
+        background-color: #f4ce8d;
+    }
+    .feature-purple {
+        float: none;
+        width: 100vw;
+        height: 25vh;
+        background-color: #c8c5fa;
+        
+        
+    }
+    .feature-red {
+        float: rnone;
+        width: 100vw;
+        height: 25vh;
+        background-color: #ef999c;
+    }
+    .features_3 {
+        flex-wrap: wrap;
+    }
+    .content {
+        height: 60vh;
+        background-color: silver;
+    }
+}
